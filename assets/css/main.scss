@@ -1,0 +1,49 @@
+@import 'generic/generic';
+@import 'layout/layout';
+
+.main-section {
+   .conteiner {
+      &.flex-conteiner {
+         display: flex;
+      }
+
+      &.col-3 {
+         flex-direction: column;
+      }
+
+      .colum {
+         display: flex;
+         justify-content: center;
+
+         .text {
+            width: 30%;
+            padding: 30px;
+            @media screen and (width: 320px){
+               width: 100%;
+               .colum{
+                  display: flex;
+                  flex-direction: column;
+               }
+            }
+         }
+      }
+   }
+
+}
+
+.section-icons {
+   .colum {
+      @media screen and (width: 768px) {
+         display: flex;
+         justify-content: center;
+         .wrapper-icon{
+            padding-left: 50px;
+            padding-right: 50px;
+            img{
+               width: 100px;
+               height: 100px;
+            }
+         }
+      }
+   }
+}
